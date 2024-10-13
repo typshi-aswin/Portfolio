@@ -1,0 +1,263 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
+body {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.navbar {
+    position: absolute;
+    z-index: 5;
+    top: 6vh; /* 35% of viewport height */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav-content {
+    text-align: center; /* Center text in the content div */
+}
+.navbar h1 {
+    font-size: 2.3vw;
+    font-family: 'Dancing Script';
+    margin: 0; /* Reset margins */
+   
+    
+}
+
+.navbar p {
+    
+    margin: 0; /* Reset margins */
+    font-size: 1vw; /* Adjust font size as needed */
+    font-family: 'Red Hat Display';
+    
+}
+
+
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+
+
+.weather-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.weather-icon{
+
+    position: absolute;
+    left:5%;
+    top: 46vh;
+    z-index: 2;
+    width: 7vw;
+    height: 14vh;
+}
+.location-icon{
+
+    position: absolute;
+    left:43%;
+    top: 34vh;
+    z-index: 9;
+    width: 16vw;
+    height: 33vh;
+}
+.date-time{
+    position: absolute;
+    top:42vh;
+    left:13%;
+    z-index:2
+}
+.date-time p {
+    margin: 0;
+    font-size: 1.3vw;
+    font-family: Jura;
+    color: aliceblue;
+}
+.fade-out {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, rgb(13, 13, 14) 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.weather-info {
+    position: absolute;
+    z-index: 3;
+    top: 55vh;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.weather-info h2 {
+    margin: 0;
+    
+    font-size: 7.3vw; /* Responsive font size based on viewport width */
+}
+
+.weather-info p {
+    margin: 0;
+    color: rgb(160, 162, 163);
+    font-size: 1.7vw; /* Responsive font size based on viewport width */
+    font-family: Roboto ;
+}
+
+
+.line {
+    position: absolute;
+    border: none; /* Remove default border */
+    border-top: 0.1px solid white; /* Change thickness and color as needed */
+    width: 80%; /* Adjust width as needed */
+    top: 70vh;
+    left: 10%;
+    margin: 4px auto; /* Center the line and add spacing */
+    z-index: 6;
+}
+.forecast {
+    position: absolute;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Space out the forecast items */
+    margin-top: 75vh; /* Add some space above the forecast */
+    margin-left: 14vw;
+    z-index: 7;
+}
+
+.forecast-item {
+    background-color: rgba(201, 195, 195, 0.1); /* Light background for the forecast items */
+    color: #ffffff; /* White text color */
+    padding: 14px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center align the text */
+    flex: 1; /* Allow items to grow and shrink equally */
+    margin: 0 35px; /* Add space between items */
+    
+}
+.location-city{
+    position: absolute;
+    text-align: left;
+    top: 30vh;
+    left:58%;
+    z-index: 10;
+    
+}
+.location-city h1{
+
+    color: #ffffff;
+    font-size: 10vh;
+}
+.location-country {
+    position: absolute;
+    text-align: left;
+    top: 40vh;
+    left:59%;
+    z-index: 10;
+
+}
+.location-country p{
+    
+    color:rgb(158, 154, 154);
+    font-size: 8vh;
+}
+
+.btn1, .btn2 {
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3em;
+    transition: all 0.2s;
+    border: none;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: transparent;
+    
+    left:94%;
+  }
+  .btn1 {
+    top:2vh;
+    color: rgb(254, 251, 251);
+    
+  }
+  .btn2 {
+    color: rgb(176, 174, 174);
+    top: 6.7vh;
+  }
+  
+  .btn1:hover, .btn2:hover {
+    
+    background-color: rgba(201, 195, 195, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn1:active, .btn2:active {
+    transform: translateY(-0.7px);
+    box-shadow: 0 5px 10px rgba(239, 237, 237, 0.2);
+  }
+  
+  .btn1::after, .btn2::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btn1::after, .btn2::after {
+    background-color: transparent;
+  }
+  .moredetails {
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+    top:39vh;
+    left:30%;
+    padding: 5px 27px;
+    background-color: rgba(181, 176, 176, 0.1);
+    border-radius: 7px;
+
+
+}
+.moredetails h3{
+    font-family: Raleway;
+    font-size: 2.4vh;
+}
+.moredetails p {
+    font-family: Jura;
+    font-size: 1vw;
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .weather-info h2 {
+        font-size: 8vw; /* Larger font size on smaller screens */
+    }
+
+    .weather-info p {
+        font-size: 5vw;
+    }
+}

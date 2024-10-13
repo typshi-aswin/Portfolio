@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAV BAR-->
+
+    <div class="navbar">
+        <h1>Weather App</h1>
+        <p>By Aswin</p>
+    </div>
+
+    <!-- REST OF THE CODE-->
+
+    <div class="container">
+        
+        <div class="fade-out"></div>
+       
+        <div class="weather-info" id="weatherInfo">
+            <h2 id="temperature"></h2>
+            <button class="btn1">C</button>
+            <button class="btn2">F</button>
+            <p id="feelslike"></p>
+            
+        </div>
+        <div class="moredetails"> 
+            <h3>  <span style="font-weight:normal"> </span>More Details</h3>
+            <p id="windspeed"></p>
+            <p id="visibility"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+        <div class="date-time"> 
+            <p id = "DateTime"></p>
+        </div>
+        <div> <img id= "locationIcon" class="location-icon" src="pin.png" alt="location icon"/> </div>
+        <div class="location-city">
+            <h1 id="location"></h1> </div>
+        <div class="location-country"> 
+            <p id="country"> </p>
+        </div>
+        <div> <img id="weatherIcon" class="weather-icon" src="" alt="Weather-Icon"/> </div>
+        <hr class="line">
+        <div class="forecast" id="forecast"></div>
+        <img id="weatherImage" class="weather-image" src="" alt="Weather Image" /> 
+    </div>
+    
+     
+    
+    <script src="bundle.js"></script>
+
+</body>
+</html>
