@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "country-code-lookup": "^0.1.3",
-    "i18n-iso-countries": "^7.12.0"
-  }
-}
