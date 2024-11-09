@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+
+
+body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    
+}
+
+
+#container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  #sidebar {
+    height: 100%;
+    width: 39vh;
+    position: fixed;
+    z-index: 1;
+    background-color: #242424e2;
+    padding: 20px;
+    padding-left: 7px;
+    overflow-x: hidden;
+    top:0;
+    left: 0;
+    border: 0.4px solid;
+    border-color: #363535;
+    
+  }
+  
+
+  
+  #sidebar p {
+    color: #e4e3e3;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+    font-size: 14px;
+    font-family: "Noto Sans";
+    border-radius: 5px;
+    
+  }
+
+  #sidebar p:nth-child(4){
+    font-family: "Figtree";
+    font-size: 12px;
+  }
+  #sidebar p:hover {
+    
+    color: #fff;
+    padding: 7px;
+    background-color: rgba(104, 185, 185, 0.4);
+  }
+
+  #sidebar p i {
+    font-size: 16px;      /* Set the icon size */
+    color: #c8c5c5;          /* Set icon color */
+    margin-right: 20px;    /* Add space between icon and text */
+    
+  }
+  .sidebar-item.active, .note-item.active {
+    background-color: rgba(149, 230, 249, 0.5);
+    padding: 7px;
+  }
+
+/* Divider line */
+  .sidebar-divider {
+    margin: 10px 0;
+    border: 0.5px solid #363535;
+  }
+  /* Main Content Styling */
+  .main-content {
+    
+    height: auto;
+    width: 30vw;
+    position: fixed;
+    margin-top: 23vh; 
+    margin-left: 40vw;
+    z-index: 3;
+    text-align: center;
+    padding: 15vh;
+    background-color: rgba(32, 31, 31, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    overflow-y: auto; /* Allows scrolling if content is too tall */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+  #sidebar input {
+
+      padding: 8px;
+      border-radius: 5px;
+      width: 97%;
+      background-color: #171717;
+      color: #ffffff;
+      font-size: 15px;
+      border: none;
+      margin-top: -5vh;
+      
+      
+  }
+  .background-img {
+
+    width: calc(100vw - 37vh);
+    height: 100vh;
+    top: 0;
+    left: 43vh;
+    object-fit: cover;
+    position:fixed;
+    z-index: 2;
+    filter: brightness(100%);
+    border-top-left-radius: 8px; 
+  }

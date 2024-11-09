@@ -1,0 +1,33 @@
+.main-content {
+    all: unset;
+    color: rgb(39, 39, 39);
+    position: fixed;
+    margin-top:3vh; 
+    margin-left: 23vw;
+    z-index: 3;
+    font-family: 'Libre Franklin';
+}
+.note-input {
+    
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    background-color:rgba(216, 210, 210, 0.2); ;
+    z-index: 4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin-top: 13vh;
+    margin-left: 17vh;
+    backdrop-filter: blur(3px);
+    color: #ffffff;
+}
+.note-input textarea {
+    width: 650px;            /* Full width for textarea */
+    height: 430px;         /* Set height */
+    border: none;          /* Remove default border */
+    outline: none;         /* Remove outline on focus */
+    resize: none;          /* Prevent resizing */
+    font-size: 16px;       /* Font size for the text */
+    color: #191919; 
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

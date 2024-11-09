@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Libre+Franklin:ital,wght@0,600;1,600&display=swap');
+
+body {
+    
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+.main-content {
+    all: unset;
+    color: rgb(39, 39, 39);
+    position: fixed;
+    margin-top:3vh; 
+    margin-left: 23vw;
+    z-index: 3;
+    font-family: 'Libre Franklin';
+}
+.main-content p{
+    margin-top: -3vh;
+}
+@media (max-width: 1000px) {
+    .main-content {
+        margin-left: 36vw; /* Decrease left margin on smaller screens */
+        width: auto; /* Allow full width on smaller screens */
+        
+    }
+}
