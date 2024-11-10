@@ -6,7 +6,7 @@ A minimalist and modern weather web application that provides real-time weather 
 
 - **Real-time Weather Updates:** Displays the current weather condition based on the user's location.
 - **Dynamic Backgrounds:** Changes the background image based on the weather (e.g., sunny, rainy, cloudy).
-- **User Interface:** A sleek, dark-themed design with a transparent navbar displaying the app's name and your name.
+- **User Interface:** A sleek, dark-themed design with a transparent navbar displaying the app's name and my name.
 - **Responsive Design:** The app is optimized for various devices, including desktops and mobiles.
 
 ## Tech Stack
