@@ -15,11 +15,11 @@ Dynamic Note Addition: Add new notes dynamically with an intuitive "Add New Note
 ## Installation
 1. Clone the repository
   ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/typshi-aswin/Portfolio.git
   ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repo-name
+   cd Portfolio
    ```
 3. Install the dependencies using npm:
    ```bash
