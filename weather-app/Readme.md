@@ -17,7 +17,8 @@ A minimalist and modern weather web application that provides real-time weather 
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/9ba5fe3f-8bf2-4cad-94f4-0f81ca173ee1)
-![image](https://github.com/user-attachments/assets/e614abad-e129-497d-b738-c0fb0fdc7ebd)
+![image](https://github.com/user-attachments/assets/5af1f577-7591-4c99-9a53-0ff7e1b2ce9b)
+
 
 
 
