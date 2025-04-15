@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Timer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            bebasneue: ['Bebas Neue', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-[url('./dark.jpg')] bg-cover bg-center bg-no-repeat text-white flex items-center justify-center min-h-screen px-4">
+  <div class="text-center space-y-8 w-full max-w-3xl">
+    <!-- Timer Display -->
+    <div id="timer" class="text-[10rem] md:text-9xl font-extrabold tracking-widest text-white font-bebasneue">
+      00:00
+    </div>
+
+    <!-- Time Input Fields -->
+    <div class="flex flex-wrap justify-center gap-4 text-black">
+      <input id="days" type="number" placeholder="Days" min="0" class="w-32 rounded-sm p-1 text-center text-lg font-poppins text-white" style="background-color: rgba(17, 17, 17, 0.2);" />
+      <input id="hours" type="number" placeholder="Hours" min="0" class="w-32 rounded-sm p-1 text-center text-lg font-poppins text-white"style="background-color: rgba(17, 17, 17, 0.2);" />
+      <input id="minutes" type="number" placeholder="Minutes" min="0" class="w-32 rounded-sm p-1 text-center text-lg font-poppins text-white"style="background-color: rgba(17, 17, 17, 0.2);" />
+      <input id="seconds" type="number" placeholder="Seconds" min="0" class="w-32 rounded-sm p-1 text-center text-lg font-poppins text-white"style="background-color: rgba(17, 17, 17, 0.2);" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-6 flex-wrap">
+      <button onclick="startTimer()" style="background-color: rgba(3, 97, 75, 0.5);" class=" hover:bg-green-700 px-6 py-2 rounded-xl text-lg font-poppins transition">Start</button>
+      <button onclick="pauseTimer()" style="background-color: rgba(3, 97, 75, 0.5);" class="hover:bg-yellow-600 px-6 py-2 rounded-xl text-lg font-poppins transition">Pause</button>
+      <button onclick="stopTimer()" style="background-color: rgba(3, 97, 75, 0.5);" class="hover:bg-red-700 px-6 py-2 rounded-xl text-lg font-poppins transition">Stop</button>
+    </div>
+
+    <!-- End Message -->
+    <div id="endMessage" class="text-xl font-semibold text-red-500 hidden">The Timer Has Ended</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
